@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main-info">
+        <h1 class="degrees" data-main-degrees>16°</h1>
+        <div class="city">
+            <h2 class="city-name" data-main-city-name>London</h2>
+            <h3 class="city-details" data-main-time>06:09 - Monday, 9 Spe 23</h3>
+        </div>
+        <div class="city-info">
+            <img src="../public/images/Cloudy-icon.png" alt="city weather image" class="city-weather-image" width="50px" height="auto" data-condition-icon>
+            <h3 class="city-weather" data-weather-condition>Cloudy</h3>
+        </div>
+    </div>
+    <div class="data">
+        <form action="" class="search">
+            <input type="text" placeholder="Search for a city" aria-label="Input are for searching a city" name="search-city" class="search-city" data-input>
+            <button type="submit" class="city-search-button" data-search-button><i class="fa fa-search"></i></button>
+        </form>
+        <div>
+            <div class="detail">
+                <h3>Weather Details</h3>
+                <h3 data-weather-details>Rijeka</h3>
+            </div>
+            <div class="detail">
+                <h3>Last Updated</h3>
+                <h3 data-last-updated>13:51</h3>
+            </div>
+            <div class="detail">
+                <h3>Temperature</h3>
+                <h3 data-temperature>36°</h3>
+            </div>
+            <div class="detail">
+                <h3>Feels like</h3>
+                <h3 data-feels-like>32°</h3>
+            </div>
+            <div class="detail">
+                <h3>Wind</h3>
+                <h3 data-wind>8km/h</h3>
+            </div>
+            <div class="detail">
+                <h3>Humidity</h3>
+                <h3 data-humidity>60%</h3>
+            </div>
+            <div class="detail-last">
+                <h3>Cloud coverage</h3>
+                <h3 data-cloud>20%</h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../public/js/client.js"></script>
+</body>
+</html>
